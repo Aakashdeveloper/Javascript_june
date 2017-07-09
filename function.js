@@ -27,7 +27,7 @@ function minus(a,b){
 }
 
 //function declaration or method
-var add = function(a,b){
+var add1 = function(a,b){
 	return a+b
 }
 
