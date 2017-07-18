@@ -1,0 +1,25 @@
+topic: ~sr()
+language: enu
+
+# Defining extra concepts out of words or group of words
+#concept:(hello) [hello hi hey "good morning" greetings]
+
+# Catching inputs and triggering outputs
+#u:(e:onStart) $onStopped=1
+
+# Replying to speech
+#u:(~hello) ~hello
+u:([hi hey pepper "hey pepper"]) hi, how are you?
+    u1:(*)I am good, is there anything i can help you with.
+
+u:({*}virtual {*}) Oh yaa, i can order that from hcl zaas platform. Do you want to order now
+    u1:([no "may be later"]) Ok, let me know whenever you need it i wil help you.  
+    u1:([yes sure definetly])  You can access zaas service cataloge on my tablet. Kindly authenticate yourself with your employee id on my tablet.
+    
+
+u:(["Here you go" done]) Thanks for authenticating yourself. Here are the service catalogies to choose from.
+    u1:(*) Sure, do you want this on azure or aws?
+        u2:(*) these are the option for AWS
+            u3:([thanks "thank you"]) Do you want to customize this.
+                u4:(No) Sure, i have placed your order. you will be notified once it is approved. Let me know if you need anything else.
+                    u5:(*) Sure have a nice day. 

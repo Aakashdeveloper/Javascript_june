@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Onclick</title>
+	<script>
+		function abhi(){
+			alert("form is submited")
+		}
+	</script>
+
+</head>
+<body>
+<input type="text" id="fname" onblur="checkit()">
+
+<button type="button" onclick="abhi()">Submit</button>
+
+<script>
+	function checkit(){
+		var a  = document.getElementById("fname");
+		a.value= a.value.toUpperCase();
+	}
+</script>
+
+</body>
+</html>
