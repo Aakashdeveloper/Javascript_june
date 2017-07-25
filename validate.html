@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script>
+		function validateForm(){
+			var x = document.forms["myForm"]["fname"].value;
+			var y = document.forms["myForm"]["lname"].value;
+			if(x == ""){
+				alert("please fill fname");
+				return false;
+			}
+			if(y == ""){
+				alert("please fill lname");
+				return false;
+			}
+
+		}
+	</script>
+</head>
+<body>
+	<form name="myForm" action="#" onsubmit="return validateForm()" method="post">
+		FName:<input type="text" name="fname"><br/>
+		LName:<input type="text" name="lname"><br/>
+		<input type="submit" value="Submit"><br/>
+
+	</form>
+
+</body>
+</html>

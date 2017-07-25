@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mouse Event</title>
+</head>
+<body>
+	<div onmouseover="mOver(this)" onmouseout="mOut(this)" style="background-color:blue;width:200px;height:200px;padding: 40px;">THis is mouse event</div>
+
+	<script>
+	function mOver(a){
+		a.style.backgroundColor="red";
+		a.innerHTML="Release Me";
+		a.style.width="400px";
+	}
+	function mOut(a){
+		a.style.backgroundColor="blue";
+		a.innerHTML="Mouse over Me";
+		a.style.width="200px";
+	}
+	</script>
+
+</body>
+</html>

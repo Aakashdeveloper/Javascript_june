@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mouse Event</title>
+</head>
+<body>
+	<div onmousedown="mDown(this)" onmouseup="mUp(this)" style="background-color:blue;width:200px;height:200px;padding: 40px;">THis is mouse event</div>
+
+	<script>
+	function mDown(a){
+		a.style.backgroundColor="red";
+		a.innerHTML="Release Me"
+	}
+	function mUp(a){
+		a.style.backgroundColor="blue";
+		a.innerHTML="Click Me"
+	}
+	</script>
+
+</body>
+</html>
