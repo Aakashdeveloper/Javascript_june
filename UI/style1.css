@@ -1,0 +1,21 @@
+ #sec1{
+        height:200px;
+        width:100%;
+        background-color:purple;  
+    }
+.first1{
+        height:200px;
+         width:60%;
+        background-color:pink;
+        border:10px double mediumslateblue;  
+        /*solid dotted double dashed*/
+    }
+.pag{
+    color:red;
+    font-size:20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    color:orange;
+    text-decoration:none;
+}
