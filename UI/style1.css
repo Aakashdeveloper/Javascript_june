@@ -1,4 +1,54 @@
- #sec1{
+body{
+    /*background: linear-gradient(to left top,palevioletred, aqua, red, yellowgreen, purple)
+    background: radial-gradient(palevioletred, aqua, red, yellowgreen, purple)*/
+}
+#one{
+    height:400px;
+    width:48%; 
+    float:right;
+    margin: 1%;
+    background: radial-gradient(palevioletred, aqua, red, yellowgreen, purple);
+    z-index: 10;
+   /* border-left:1px solid blue;*/
+
+
+} 
+.nhead{
+    color:green;
+    text-shadow: 5px  5px greenyellow;
+}
+#one p{
+    color:orchid;
+    
+
+}
+#two{
+    height:100px;
+     width:48%;
+    float:right;
+    padding:1%;
+
+
+} 
+.myimg{
+    border-radius:50%;
+    opacity: 1;
+    border:5px dotted yellow;
+    display: block;
+    margin: auto;
+    filter:staurate(100%);
+    /*grayscale sepia invert staurate hue alpha*/
+}
+#three{
+    height:200px;
+     width:200px;
+    background-color:blue;  
+    float:left; 
+    box-shadow:20px 15px 10px goldenrod;
+    border-radius: 50%;
+} 
+
+#sec1{
         height:200px;
         width:100%;
         background-color:purple;  
@@ -6,9 +56,12 @@
 .first1{
         height:200px;
          width:60%;
+         position: absolute;
         background-color:pink;
-        border:10px double mediumslateblue;  
+        border:10px double mediumslateblue;
         /*solid dotted double dashed*/
+        border-radius:100px;
+        z-index: 1000;
     }
 .pag{
     color:red;

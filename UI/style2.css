@@ -1,0 +1,44 @@
+.trans{
+    height: 200px;
+    width: 200px;
+}
+#move:hover{
+ transform:translate(400px,100px)
+}
+
+.trans:hover{
+    transform: rotate(180deg);
+   /* transform: scale(2,1);
+    transform: skewY(20deg);*/
+   
+}
+.one{
+    height:200px;
+    width:200px;
+    background-color: palegreen;
+}
+.pagination{
+    display:inline-block;
+}
+.pagination a{
+    color:green;
+    text-decoration: none;
+    padding: 5px 10px;
+    border:2px solid greenyellow;
+}
+
+.one:hover{
+    background-color: peru;
+    height:400px;
+    width:400px;
+    visibility: visible;
+    border-radius: 50%;
+}
+
+.one:hover #hide{
+    visibility: visible;
+}
+
+#hide{
+    visibility: hidden;
+}
