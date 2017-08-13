@@ -4,10 +4,43 @@
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <style>
+            .navbar-custom{
+                background-color: palegreen;
+                color:blueviolet;
+            }
+        </style>
     </head>
     <body>
          <div class="container">
-             <br><br>
+             <nav class="navbar navbar-inverse navbar-fixed-top">
+                 <div class="cotainer-fluid">
+                     <div class="navbar-header">
+                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav1">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                         </button>
+                         <a class="navbar-brand" href="#">Logo</a>
+                     </div>
+                    <div id="nav1" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About </a></li>
+                        <li><a href="#">Contact</a></li>
+                        
+                    </ul>
+                     <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><span class="glyphicon glyphicon-user"></span>Sign In</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>Log In</a> </a></li>
+               
+                        
+                    </ul>
+                    </div>
+                 </div>
+
+             </nav>
+                <br><br>
              <div class="col-md-8">
               <table class="table table-bordered">
                  <thead>
@@ -158,6 +191,32 @@
                 </div>
 
             </div>
+
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-taregt="myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-taregt="myCarousel" data-slide-to="1" class="active"></li>
+                    <li data-taregt="myCarousel" data-slide-to="2" class="active"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="b.jpg">
+                    </div>
+                    <div class="item">
+                        <img src="c.jpg">
+                    </div>
+                    <div class="item">
+                        <img src="d.jpg">
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+
             <div class="progress">
                 <div class="progress-bar progress-bar-success" role="progressbar" 
                 aria-valuenow="70" aria-valuemin="0" aria-value="100" style="width:70%">
